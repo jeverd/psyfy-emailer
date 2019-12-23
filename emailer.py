@@ -54,6 +54,7 @@ class Emailer:
         if not Emailer.connected:
             try:
                 connection = SMTP(os.getenv('SMTP_ADDRESS'), os.getenv('SMTP_PORT'))
+                print(os.getenv('SMTP_ADDRESS'))
                 connection.ehlo()
                 connection.starttls()
                 connection.login(self.account.user, self.account.password)
