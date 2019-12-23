@@ -60,8 +60,6 @@ class Emailer:
                 connection.starttls()
                 connection.login(self.account.user, self.account.password)
             except SMTPResponseException as e:
-                print('checking here, error')
-                print(e)
                 raise e
             else:
                 Emailer.connected = True
