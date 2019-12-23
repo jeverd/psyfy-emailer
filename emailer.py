@@ -50,7 +50,7 @@ class Emailer:
     def connect(self):
         if not Emailer.connected:
             try:
-                connection = SMTP('smtp.gmail.com', 587)
+                connection = SMTP(os.getenv('SMTP_ADDRESS'), os.getenv('SMTP_PORT'))
                 connection.ehlo()
                 connection.starttls()
                 connection.login(self.account.user, self.account.password)
