@@ -14,6 +14,7 @@ class Emailer:
     connection = None
 
     def __init__(self, user_email, password, receiver=None):
+        print(password)
         self.account = Emailer.Account(user_email, password)
         self.msg = None
         self.receiver = receiver

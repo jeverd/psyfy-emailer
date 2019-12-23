@@ -7,8 +7,7 @@ from time import sleep
 app = Flask(__name__)
 logging.default_handler.setFormatter(
     Formatter('[%(asctime)s] %(levelname)s in %(module)s: %(message)s'))
-
-emailer = Emailer(os.getenv('EMAILER_ADDRESS'), os.getenv('EMAILER_PASSWORD'))
+emailer = Emailer(os.getenv('EMAILER_EMAIL'), os.getenv('EMAILER_PASSWORD'))
 
 if not app.debug:
     file_handler = FileHandler('emailer.log')
