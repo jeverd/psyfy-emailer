@@ -21,7 +21,7 @@ class Emailer:
 
     def run(self, email_type, user_package, logger):
         self.msg = MIMEMultipart("alternative")
-        self.msg['From'] = self.account.user
+        self.msg['From'] = f'PsyCare <{self.account.user}>'
         try:
             self.connect()
             self.make_email(email_type, user_package)
