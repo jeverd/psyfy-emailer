@@ -33,8 +33,8 @@ def request_accepted_template(user_package):
                         <div style="margin-left:15px;">
                             <div style="margin-top:20px;font-size:20px;font-weight:900;">Hello {user_package['full_name']},</div>
                             <p style="padding: 5px 7.5px 7.5px 20px">
-                                We are happy to say that your account has been aproved 
-                                by our team and you are now a official PsyCare member!
+                                Your account has been aproved!! <br/>
+                                We are happy that you've decided to support our initiative and provide us with your feedback. <br/>
                             </p>
                             <div style="padding: 5px 7.5px 7.5px 20px">
                                 <b style="font-size: 18px;">Next steps:</b>
@@ -49,13 +49,14 @@ def request_accepted_template(user_package):
                                             <li><b>Clinic Address</b>: {user_package['address']}</li>
                                         </ul>
                                     </li> 
-                                    <li>Add profile image and trailer video to catch patient's attention</li>
-                                    <li>Set your available hours on your <a href="https://psycare.ca/calendar">Calendar</a></li>
+                                    <li>Edit your features such as your overview page and calendar.</li>
                                     <li>You are all set!</li>
                                 </ol>
                             </div>
                             <p style="padding: 0px 7.5px 7.5px 20px">
-                                Feel free to contact us about any concerns and/or any new features you would like to see on our platform.
+                                Once you have completed these steps, please tell us about your experience on the website and any concerns and/or new features you would like to see on our platform. We are continuously improving thanks to your help. <br/>
+                                Feel free to invite therapist colleagues to join the initiative. The more feedback we get from reliable users, the better.
+                                By 20/05/2020, we look forward to have a stable site and release it to patients so they can view your profile.
                                 <br/><br/>
                                 <b style="font-size:18px;">Thanks!</b>
                             </p>
